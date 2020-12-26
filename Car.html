@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cars</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
+	<style>
+    .ml9 {
+  position: relative;
+  font-weight: 350;
+  font-size: 4em;
+
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+   text-decoration: underline;
+   text-decoration-color:#8d703b;
+   padding-bottom: 5px;
+
+ 
+}
+     .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 400px;
+
+    }
+		.ml7 {
+  position: relative;
+  font-weight: 900;
+
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  
+}
+.navbar {
+  background-image:url('https://3.bp.blogspot.com/-Kpwm_N-HL1Q/UPcWhUi7vMI/AAAAAAAAADo/G3Nlmf117h0/s1600/super-car-hd-wallpaper-black.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.bgimg {
+  height:400px;
+  background-image: url('https://3.bp.blogspot.com/-Kpwm_N-HL1Q/UPcWhUi7vMI/AAAAAAAAADo/G3Nlmf117h0/s1600/super-car-hd-wallpaper-black.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ .home{
+  margin-left: 330px;
+
+}
+.navother{
+  margin-left: 40px;
+ 
+
+}
+.navother:hover{
+  border-bottom: 2px solid white;
+
+}
+	</style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-md navbar-dark animate__zoomInDown  animate__animated"   style="background-color:rgba(0,0,0,0.3);">
+    <a href="#" class="navbar-brand navstyle"style="font-size: 28px;color: black; ">
+ <h1 class="ml7">
+  <span class="text-wrapper">
+    <span class="letters" style=" font-weight:700;color: white;">FASCINANT</span>
+    <script>
+    gsap.from(".text-wrapper",{duration:0.4,opacity:0,delay:1,ease:"power1",x:"-100vw"})
+  </script>
+  </span>
+</h1>
+      
+<script >
+  var textWrapper = document.querySelector('.ml7 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml7 .letter',
+    translateY: ["1.1em", 0],
+    translateX: ["0.55em", 0],
+    translateZ: 0,
+    rotateZ: [180, 0],
+    duration: 1050,
+    easing: "easeOutExpo",
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml7',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 4000
+  });
+</script>
+    </a>
+    <div class="ml-4">
+    <button type="button" class="navbar-toggler" style="height:20px; " data-toggle="collapse" data-target="#mymenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-auto" id="mymenu">
+        <ul class="navbar-nav  ">
+      <li class="nav-item home" ><a href="car rental home.html"style="font-weight: bold;color: white;" class="nav-link navstyle">HOME</a></li>
+      <li class="nav-item navother" style="border-bottom: 2px solid white;font-weight: bold; "><a style="" href="Car.html" class="nav-link active">CARS</a> </li>
+      <li class="nav-item navother" ><a style="font-weight: bold;color: white;" href="Index.php" class="nav-link navstyle">HOTEL</a> </li>
+      <li class="nav-item navother" ><a style="font-weight: bold;color: white;" href="About us.html" class="nav-link navstyle">ABOUT US</a> </li>
+      <li class="nav-item navother" ><a style="font-weight: bold;color: white;" href="Contact.html" class="nav-link navstyle">CONTACT</a> </li>
+
+
+      
+      <li class="nav-item navother" style=""><a href="#" class="nav-link navstyle">
+        <i class="fab fa-facebook" style="font-size:25px;color:white;"></i>
+        <i class="fab fa-instagram"style="font-size:25px;color:white;"></i>
+        <i class="fab fa-snapchat"style="font-size:25px;color:white;"></i>
+        <i class="fab fa-twitter"style="font-size:25px;color:white;"></i></a>
+        </li>
+    </ul>
+    </div>
+  </div>
+  <script>
+    gsap.from(".nav-item",{duration:1.5,opacity:0,delay:1,ease:"bounce",x:"-100vw"})
+  </script>
+  </nav>
+<div class="container-fluid bgimg animate__zoomInDown  animate__animated" style="">
+<h1 class="ml6 ab"style="text-align:center;transform: translateY(690%); margin-right:150px;  color: white;" >
+  <span class="text-wrapper">
+    <span class="letters">Our Cars</span>
+  </span>
+</h1>
+<script>
+   gsap.from(".ab", {
+  scrollTrigger:{
+    trigger:".ab",
+     start:"170px center",
+
+     
+  
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:1.5,
+   ease: "power3.out"
+});
+</script>
+</div>
+
+<div style="background-color:#f8f9fa;">
+<div >
+	<div class="container">
+        <br><br>
+        <div class="row">
+          <div class="col-md-4 r1">
+          <div class="card" >
+              <img  class="card-img-top" src="https://cdni.autocarindia.com/ExtraImages/20190129071332_2019-Wagon-R-with-accessori.jpg" alt="Card image cap"style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Fascinant Mini </h5>
+                <p class="card-text"style="text-align: center;" >From ₹8 <spna style="border-bottom: none; color:#b8b8b8; font-size: 12px;">per km</spna></p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Passenger:</span> 4 Persons (Excluding Driver)</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Driver:</span>No</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;"><span style="color:#8d703b">Road Assistance:</span>Yes</p>
+                <button class="button vrbtn btn btn-block"onclick="window.location.href='mini.html';" style="background-color:#8d703b; color: white;"><span>Book Now</span></button>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4 r2">
+          <div class="card" >
+              <img  class="card-img-top" src="https://www.team-bhp.com/?q=sites/default/files/styles/check_extra_large_for_review/public/hyundai-eon-02_1.jpg" style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Fascinant Micro</h5>
+                <p class="card-text"style="text-align: center;" >From ₹10  <spna style="border-bottom: none; color:#b8b8b8; font-size: 12px;">per Km</spna></p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Passenger:</span> 4 Persons (Excluding Driver)</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Driver:</span>Yes</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;"><span style="color:#8d703b">Road Assistance:</span>Yes</p>
+                
+                <button class="button vrbtn btn btn-block"onclick="window.location.href='micro.html';"style="background-color:#8d703b; color: white;"><span>Book Now</span></button>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4 r3">
+          <div class="card" >
+              <img class="card-img-top" src="https://images.hgmsites.net/hug/honda-civic-sdn_100712404_h.jpg" alt="Card image cap"style="height: 250px;">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Fascinant Sedan</h5>
+                <p class="card-text"style="text-align: center;" >From ₹12  <spna style="border-bottom: none; color:#b8b8b8; font-size: 12px;">per Km</spna></p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Passenger:</span>4 Persons (Excluding Driver)</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Driver:</span>Yes</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;"><span style="color:#8d703b">Road Assistance:</span>Yes</p>
+                <button class="button vrbtn btn btn-block"style="background-color:#8d703b; color: white;"onclick="window.location.href='sedan.html';"><span>Book Now</span></button>
+              </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script>
+         gsap.from(".r1", {
+  scrollTrigger:{
+    trigger:".r1",
+     start:"top center",
+     
+    
+     
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:0.5,
+   ease: "power3.out"
+
+});
+      gsap.from(".r2", {
+  scrollTrigger:{
+    trigger:".r2",
+     start:"top center",
+     
+    
+     
+  },
+  y:"-100px",
+   opacity:0,
+   delay:0.5,
+   duration:0.5,
+   ease: "power3.out"
+});
+       gsap.from(".r3", {
+  scrollTrigger:{
+    trigger:".r3",
+     start:"top center",
+     
+    
+     
+  },
+  x:"100vw",
+   opacity:0,
+   delay:0.3,
+   duration:0.4,
+   ease: "power3.out"
+
+});
+       
+      
+</script>
+        
+        <br><br>
+        	<div class="container" style="background-color:#f8f9fa;">
+        		<div class="row">
+          <div class="col-md-4 r4">
+          <div class="card" >
+              <img  style="height: 250px;" class="card-img-top " src="https://img.etimg.com/thumb/width-640,height-480,imgsize-55292,resizemode-1,msid-61078735/wealth/spend/best-5-suvs-to-buy-this-diwali/st3-thumb.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Fascinant SUV</h5>
+                <p class="card-text"style="text-align: center;" >From ₹15  <spna style="border-bottom: none; color:#b8b8b8; font-size: 12px;">per Km</spna></p>
+                
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Passenger:</span> 6 Persons (Excluding Driver)</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Driver:</span>Yes</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;"><span style="color:#8d703b">Road Assistance:</span>Yes</p>
+
+                <button class="button vrbtn btn btn-block"style="background-color:#8d703b; color: white;"onclick="window.location.href='suv.html';"><span>Book Now</span></button>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4 r5">
+          <div class="card" >
+              <img  style="height: 250px;" class="card-img-top" src="https://cdn.jdpower.com/JDPA_2020%20Hyundai%20Elantra%20Sport%20Blue%20Front%20View%20Small.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Fascinant Prime</h5>
+                <p class="card-text"style="text-align: center;" >From ₹18  <spna style="border-bottom: none; color:#b8b8b8; font-size: 12px;">per Km</spna></p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Passenger:</span> 4 Persons (Excluding Driver)</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Driver:</span>Yes</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;"><span style="color:#8d703b">Road Assistance:</span>Yes</p>
+                
+                <button class="button vrbtn btn btn-block"style="background-color:#8d703b; color: white;"onclick="window.location.href='prime.html';"><span>Book Now</span></button>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4 r6">
+          <div class="card" >
+              <img  style="height: 250px;" class="card-img-top" src="https://stimg2.cardekho.com/images/carNewsimages/userimages/23707/1557925773434/GeneralNews.jpg?tr=w-360?tr=w-360" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Fascinant Luxury</h5>
+                <p class="card-text"style="text-align: center;" >From ₹20   <spna style="border-bottom: none; color:#b8b8b8; font-size: 12px;">per Km</spna></p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Passenger:</span> 4 Persons (Excluding Driver)</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;margin:0px;padding: 0px;"><span style="color:#8d703b">Driver:</span>Yes</p>
+                <p class="card-text"style="font-family: 'Marcellus SC', serif;text-align: center;"><span style="color:#8d703b">Road Assistance:</span>Yes</p>
+                
+                <button class="button vrbtn btn btn-block"style="background-color:#8d703b; color: white;"onclick="window.location.href='luxury.html';"><span>Book Now</span></button>
+              </div>
+          </div>
+        </div>
+        </div>
+        
+        	</div>
+          <script>
+ gsap.from(".r4", {
+  scrollTrigger:{
+    trigger:".r1",
+     start:"450px center",
+     
+    
+     
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:0.5,
+   ease: "power3.out"
+
+});
+      gsap.from(".r5", {
+  scrollTrigger:{
+    trigger:".r2",
+     start:"450px center",
+     
+    
+     
+  },
+  y:"-100px",
+   opacity:0,
+   delay:0.3,
+   duration:0.5,
+   ease: "power3.out"
+});
+       gsap.from(".r6", {
+  scrollTrigger:{
+    trigger:".r3",
+     start:"450px center",
+     
+    
+     
+  },
+  x:"100vw",
+   opacity:0,
+   delay:0.3,
+   duration:0.4,
+   ease: "power3.out"
+
+});  
+      
+</script>
+        	
+        </div>
+        </div>
+      </div>
+    </div> 
+</div>
+</div>
+<br><br>
+<br><br>
+ <h1 class="ml9 ig" style="text-align: center;">
+  <span class="text-wrapper">
+    <span class="letters" >INSTAGRAM</span>
+  </span>
+</h1>
+    <script>
+      var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 2500
+  });
+    gsap.from(".ig", {
+  scrollTrigger:{
+    trigger:".ig",
+     start:"top center",
+   
+     
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:1,
+   ease: "circ.out"
+});
+    </script>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-bmw-7-series-730ld-2019-uk-fd-hero-front.jpg?itok=3hIdcBPu)"></div>
+      <div class="swiper-slide" style="background-image:url(https://d3lp4xedbqa8a5.cloudfront.net/s3/digital-cougar-assets/whichcar/2019/08/05/6235/mercedes-benz-cls450-front-qtrr.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://img.autobytel.com/car-reviews/autobytel/11682-the-most-comfortable-family-sedans-for-2020/2020-Honda-Accord-900x600.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://cdni.autocarindia.com/ExtraImages/20190129071332_2019-Wagon-R-with-accessori.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://img.etimg.com/thumb/width-640,height-480,imgsize-55292,resizemode-1,msid-61078735/wealth/spend/best-5-suvs-to-buy-this-diwali/st3-thumb.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Dzire-2020/7664/1584705998420/front-left-side-47.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/top_10_compact_suvs_-_range_rover_evoque.jpg?itok=fvbp3IIs)"></div>
+      <div class="swiper-slide" style="background-image:url(https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Hyundai-Xcent/5789/1559026746847/front-left-side-47.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/story/hero_image/2021-Hyundai-i30-sedan-red-1001x565-1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://cnet3.cbsistatic.com/img/z-wgv2GXIy4QY7jDiZBDTfm_bes=/1240x775/2020/08/13/5a04d974-bd24-49e0-91c6-4502bdfb5dea/rolls-royce-wraith-2020-09314.jpg)"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!--Instagram End-->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+  <!--Instagram Script End-->
+<br>
+<!--Footer-->
+<footer
+      class="page-footer font-small unique-color-dark brown1"
+      style="background-color: black"
+    >
+      <div style="background-color: #8d703b" class="brown">
+        <div class="container">
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+            <!-- Grid column -->
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 get"
+            >
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4 icon"> </i>
+                
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter white-text mr-4 icon"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g white-text mr-4 icon"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in white-text mr-4 icon"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram white-text icon"> </i>
+              </a>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </div>
+           <script>
+        gsap.from(".brown", {
+  scrollTrigger:{
+    trigger:".brown",
+     start:"-35px center",
+     end:"+=150",
+     
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:1.3,
+   ease:"cric.out"
+});
+         gsap.from(".get", {
+  scrollTrigger:{
+    trigger:".get",
+     start:"-25px center",
+     end:"+=150",
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"-100vw",
+   opacity:0,
+   dealay:1.3,
+   duration:1.5,
+   ease:"bounce.out"
+});
+
+gsap.from(".icon", {
+  scrollTrigger:{
+    trigger:".icon",
+     start:"-100px center",
+     end:"+=150",
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"100vw",
+   opacity:0,
+   rotate:360,
+   stagger:0.3,
+   duration:1.8
+   
+});
+</script>
+      </div>
+      <br><br>
+
+      <!-- Footer Links -->
+      <div class="container-fluid ">
+        <div
+          class="container text-center text-md-left mt-5"
+          style="color: white"
+        >
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase font-weight-bold ft">FASCINANT HOTEL</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto ft"
+                style="width: 60px"
+              />
+              <p class="ft">
+                fascinant's hotel search allows users to compare hotel prices in
+                just a few clicks from more than 400 booking sites for 1.8
+                million+ hotels in over 190 countries. With 1.4 billion visits
+                annually to our site, travellers regularly use the hotel
+                comparison to compare deals in the same city. Get information
+                for weekend trips to cities like Mumbai or Bengaluru and you can
+                find the right hotel on trivago quickly and easily. numerous
+                hotels available..
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold ft">Products</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+              />
+              <p class="ft">
+                <a href="Index.html">Hotels</a>
+              </p>
+              <p class="ft">
+                <a href="Car rental.html">Car Rental</a>
+              </p>
+              <p class="ft">
+                <a href="Rooms.html">Rooms</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold ft">Useful links</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+              />
+              <p class="ft">
+                <a href="#!">Your Account</a>
+              </p>
+              <p class="ft">
+                <a href="#!">Become an Affiliate</a>
+              </p>
+              <p class="ft">
+                <a href="#!">Shipping Rates</a>
+              </p>
+              <p class="ft">
+                <a href="About us.html">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold ft">Contact</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+              />
+              <p class="ft">
+                <i class="fas fa-home mr-3"></i
+                ><span style="font-family: 'Marcellus SC', serif"
+                  >Noida Sec62,India</span
+                >
+              </p>
+              <p class="ft">
+                <i class="fas fa-envelope mr-3"></i
+                ><span style="font-family: 'Marcellus SC', serif"
+                  >Email: mail@mail.com</span
+                >
+              </p>
+              <p class="ft">
+                <i class="fas fa-phone mr-3"></i
+                ><span style="font-family: 'Marcellus SC', serif"
+                  >Phone: 9675303719</span
+                >
+              </p >
+              <p class="ft">
+                <i class="fas fa-print mr-3"></i>
+                <span style="font-family: 'Marcellus SC', serif"
+                  >+ 01 234 567 89</span
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <script>
+        gsap.from(".brown1", {
+  scrollTrigger:{
+    trigger:".brown1",
+     start:"top center",
+     end:"+=150",
+     
+     
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"-100vw",
+   opacity:0,
+   dealay:0.5,
+   duration:1.3,
+   ease:"expo.out"
+});
+
+ gsap.from(".ft", {
+  scrollTrigger:{
+    trigger:".ft",
+     start:"-190px center",
+     end:"+=150",
+     
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  y:"100px",
+   opacity:0,
+   duration:1.5,
+   stagger:0.2
+   
+});
+
+      </script>
+      <div
+        class="footer-copyright text-center py-3 ft1"
+        style="background-color: ; color: white"
+      >
+        Copyright © 2020 FASCINANT HOTEL Inc. All rights reserved.
+      </div>
+      <script>
+        gsap.from(".ft1", {
+  scrollTrigger:{
+    trigger:".ft1",
+     start:"-400px center",
+     end:"+=150",
+     
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"-100vw",
+   opacity:0,
+   delay:4,
+   ease:"expo.out",
+   duration:1.5
+   
+   
+});
+      </script>
+      <!-- Copyright -->
+    </footer>
+    <!--footer End-->
+
+</body>
+</html>

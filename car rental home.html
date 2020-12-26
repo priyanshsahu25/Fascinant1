@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Car Rental</title>
+	<link rel="stylesheet" href="">
+	 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<style type="text/css" media="screen">
+		body{
+			background-color: #f8f9fa;
+		}
+
+		  .middle{
+		
+  top: 50%;
+  width: 100%;
+ 
+}
+.counting-sec{
+  padding: 40px 0;
+  width: 100%;
+  background-color: #8d703b;
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col{
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.col i{
+  font-size: 40px;
+  color: #333;
+}
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+}
+		 .home{
+  margin-left: 350px;
+
+}
+.navother{
+  margin-left: 50px;
+ 
+
+}
+.navother:hover{
+  border-bottom: 2px solid white;
+
+}
+.ml15 {
+  font-weight: 700;
+  font-size: 3.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+.ml7 {
+  position: relative;
+  font-weight: 900;
+
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  
+}
+.bg{
+  margin-top:-112px;
+}
+ .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 400px;
+
+    }
+
+.ml9 {
+  position: relative;
+  font-weight: 350;
+  font-size: 4em;
+
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+   text-decoration: underline;
+   text-decoration-color:#8d703b;
+   padding-bottom: 5px;
+
+ 
+}
+	</style>
+</head>
+<body>
+	  <!--navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark animate__zoomInDown animate__animated"   style="z-index: 99;">
+    <a href="#" class="navbar-brand navstyle"style="font-size: 28px;color: black; "> 
+      <h1 class="ml7">
+  <span class="text-wrapper">
+    <span class="letters" style=" font-weight:700;color: white;">FASCINANT</span>
+  </span>
+  <script>
+    gsap.from(".text-wrapper",{duration:0.4,opacity:0,delay:1,ease:"power1",x:"-100vw"})
+  </script>
+</h1>
+     <script >
+  var textWrapper = document.querySelector('.ml7 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml7 .letter',
+    translateY: ["1.1em", 0],
+    translateX: ["0.55em", 0],
+    translateZ: 0,
+    rotateZ: [180, 0],
+    duration: 1050,
+    easing: "easeOutExpo",
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml7',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 4000
+  });
+</script>
+    </a>
+    <div class="ml-4">
+    <button type="button" class="navbar-toggler" style="height:20px; " data-toggle="collapse" data-target="#mymenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-auto" id="mymenu">
+        <ul class="navbar-nav  ">
+      <li class="nav-item home" style="border-bottom: 2px solid white;font-weight: bold; "><a href="car rental home.html" class="nav-link active">HOME</a></li>
+      <li class="nav-item navother" ><a style="font-weight: bold;color: white;" style="" href="Car.html" class="nav-link navstyle">CARS</a> </li>
+      <li class="nav-item navother" ><a style="font-weight: bold;color: white;" href="Index.html" class="nav-link navstyle">HOTEL</a> </li>
+      <li class="nav-item navother" ><a style="font-weight: bold;color: white;" href="About us.html" class="nav-link navstyle">ABOUT US</a> </li>
+      <li class="nav-item navother" ><a style="font-weight: bold;color: white;" href="Contact.html" class="nav-link navstyle">CONTACT</a> </li>      
+      <li class="nav-item navother" style=""><a href="#" class="nav-link navstyle">
+        <i class="fab fa-facebook" style="font-size:25px;color:white;"></i>
+        <i class="fab fa-instagram"style="font-size:25px;color:white;"></i>
+        <i class="fab fa-snapchat"style="font-size:25px;color:white;"></i>
+        <i class="fab fa-twitter"style="font-size:25px;color:white;"></i></a>
+        </li>
+    </ul>
+    </div>
+  </div>
+   <script>
+    gsap.from(".nav-item",{duration:1.5,opacity:0,delay:1,ease:"bounce",x:"-100vw"})
+  </script>
+  </nav>
+  <!--navbar End-->
+  <!--Carousel-->
+  <div class="bg animate__zoomInDown animate__animated">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="height:800px;" class="d-block w-100" src="car.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img style="height:800px;" class="d-block w-100" src=" https://www.stuffmirror.com/wp-content/uploads/2017/11/2017-BMW-7-Series-Black-Ice-wallpaper-hd-1920x1080.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" style="height:800px;"  src=" https://cdn.motor1.com/images/mgl/kPJOP/s1/2020-honda-pilot-black-edition.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" style="height:800px;"  src="https://i.pinimg.com/originals/4b/2b/4d/4b2b4d14645d153f3334dd27f7ef92bb.jpg" alt="Third slide">
+    </div>
+    
+     <div class="carousel-item">
+      <img style="height:800px;" class="d-block w-100" src="https://largefs-luxedb.s3.us-east-2.amazonaws.com/luxedb/wp-content/uploads/2011/02/The-Armored-Luxury-Car-Audi-A8-L-Security-1.jpg" alt="First slide">
+    </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+  <br>
+  <!-- Advantage-->
+  <br><br>
+  <!--CHeck in-->
+    <div style="background-color: #f8f9fa;">
+      <div class="container" style="background-color: #f8f9fa;">
+      <div class="row">
+        <div class="col-md-3 ch">
+          <div class="card border-0" style="background-color:; height: 100px">
+            <div>
+              <label for="start" style="color: #7b6233; font-size:20px; font-weight: 600; display: block;"><span style="display:block;text-align: center; ">CAR BOOKING DATE</span></label>
+              <input
+                class="form-control border-0"
+                type="date"
+                id="start"
+                name="trip-start"
+                value="DD/MM/YYYY"
+                min="2020-11-12"
+                max="2021-12-12"
+                placeholder="First name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ch">
+          <div class="card border-0" style="background-color:; height: 100px">
+            <div>
+              <label for="start" style="display:block;text-align: center;color: #7b6233; font-size:20px; font-weight: 600; ">CHECK-RETURN DATE</label>
+              <input
+                class="form-control border-0"
+                type="date"
+                id="start"
+                name="trip-start"
+                value="DD/MM/YYYY"
+                min="2020-11-12"
+                max="2021-12-12"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 ch">
+          <div class="card border-0" style="background-color:; height: 100px">
+            <div class="form-group border-0">
+              <label for="inputState"style="display:block;text-align: center;color: #7b6233; font-size:20px; font-weight: 600; ">ABOVE 18</label>
+              <select id="inputState" class="form-control border-0">
+                <option selected>YES</option>
+                <option>NO</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 ch">
+          <div class="card border-0" style="background-color:; height: 100px">
+            <div class="form-group border-0">
+              <label for="inputState" style="display:block;text-align: center;color: #7b6233; font-size:20px; font-weight: 600; ">DRIVER</label>
+              <select id="inputState" class="form-control border-0">
+                
+                <option selected>YES</option>
+                <option>NO</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 ch1">
+          <div class="card border-0">
+            <button
+              class="btn"
+              style="background-color: #7b6233; height: 100px; color: white"onclick="window.location.href='Car.html';">
+              Check Availability
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+        <script>
+       gsap.from(".ch", {
+  scrollTrigger:{
+    trigger:".ch",
+     start:"-100px center",
+     
+    
+     
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:0.5,
+   stagger:0.2,
+   ease: "power3.out"
+});
+       gsap.from(".ch1", {
+  scrollTrigger:{
+    trigger:".ch1",
+     start:"-100px center",
+   
+    
+     
+  },
+  x:"100vw",
+   opacity:0,
+   delay:0.8,
+   duration:0.5,
+   
+   ease: "power3.out"
+});
+
+    </script>
+    <!-- Check in end-->
+    <br><br><br>
+  <div class="container-fluid" style="background-color:#f8f9fa;">
+    <div class="container"style="height: 500px;">
+        <div style="text-align: center;font-family: 'Acme', sans-serif;" class="a">
+            <h2><b>THE CAR RENTAL ADVANTAGE</b></h2>
+        </div>
+        <div style="text-align: center; font-family: 'Architects Daughter', cursive;"class="b">
+            <h4><b>We simplified car rentals, so you can focus on what's important to you.</b></h4>
+        </div>
+        <br>
+            <div class=" row">
+                <div class="col-md-4 x">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/color/53/000000/paid-search.png" style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;" style="text-align: center;">No Hidden Charges</h4>
+                            <h5 style="text-align: center;font-size: 17px;padding: 5px;">Our prices include taxes and insurance. <br>What you see is what you really pay!</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 y">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/officel/40/000000/worldwide-location.png"style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;">Travel tension free</h4>
+                            <h5 style="font-size: 17px;text-align:center;padding: 5px;">Our cars have all the papers.  Just remember to bring your driving licence.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 z">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/color/57/000000/road.png"style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;" style="text-align: center;">24x7 Roadside Assistance</h4>
+                            <h5 style="font-size: 17px;text-align: center;padding: 5px;">We have round-the-clock, pan India partners. Help is never far away from you.</h5>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                  <script>
+       gsap.from(".a", {
+  scrollTrigger:{
+    trigger:".a",
+     start:"top center",
+  
+  },
+  y:"-100px",
+   opacity:0,
+   duration:0.5,
+   ease: "power3.out"
+});
+       gsap.from(".b", {
+  scrollTrigger:{
+    trigger:".b",
+     start:"top center",
+    
+
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:0.5,
+  
+   ease: "power3.out"
+});
+
+ gsap.from(".x", {
+  scrollTrigger:{
+    trigger:".x",
+     start:"top center",
+     
+  
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:0.5,
+   ease: "power3.out"
+});
+  gsap.from(".y", {
+  scrollTrigger:{
+    trigger:".y",
+     start:"100px center",
+     
+  
+  },
+  y:"-100px",
+   opacity:0,
+   delay:0.5,
+   duration:0.5,
+   ease: "power3.out"
+});
+ gsap.from(".z", {
+  scrollTrigger:{
+    trigger:".z",
+     start:"top center",
+     
+  
+  },
+  x:"100vw",
+   opacity:0,
+   delay:0.5,
+   duration:0.5,
+   ease: "power3.out"
+});
+
+    </script>
+<br>
+            <div class=" row">
+                <div class="col-md-4 x1">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/fluent/60/000000/vehicle-security.png" style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;">Damage Insurance</h4>
+                            <h5 style="font-size: 17px;text-align: center;padding: 5px;">All your bookings include damage insurance! Drive safe, but don’t worry!</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 y1">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/emoji/58/000000/fuel-pump.png"style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;">Time Cost Included</h4>
+                            <h5 style="font-size: 17px;text-align: center;padding: 5px;">Don't worry about time! All time  costs are included . Fuel on your own</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 z1">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/cute-clipart/54/000000/price-tag-usd.png"style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;">Flexi Pricing Packages</h4>
+                            <h5 style="font-size: 17px;text-align: center;padding: 5px;">One size never fits all! Choose a balance of time and kilometers that works best for you.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    	  gsap.from(".x1", {
+  scrollTrigger:{
+    trigger:".x",
+     start:"top center",
+     
+  
+  },
+  x:"-100vw",
+   opacity:0,
+   delay:0.5,
+   duration:0.5,
+   ease: "power3.out"
+});
+  gsap.from(".y1", {
+  scrollTrigger:{
+    trigger:".y",
+     start:"100px center",
+     
+  
+  },
+  y:"-100px",
+   opacity:0,
+   delay:0.9,
+   duration:0.5,
+  
+   ease: "power3.out"
+});
+ gsap.from(".z1", {
+  scrollTrigger:{
+    trigger:".z",
+     start:"top center",
+     
+  
+  },
+  x:"100vw",
+   opacity:0,
+   delay:0.5,
+   duration:0.5,
+   ease: "power3.out"
+});
+    </script>
+  	<!-- Advantage End-->
+  	<br><br>
+  	   <!-- number increasing-->
+     <div class="middle">
+    <div class="counting-sec">
+      <div class="inner-width">
+        <div class="col ico">
+          <i class="fas fa-car ico"style="color: white;font-size: 60px;"></i>
+          <div class="num">200</div>
+          Rides Daily
+        </div>
+
+        <div class="col ico">
+          <i class="fas fa-smile-wink ico" style="color: white;font-size: 60px;"></i>
+          <div class="num">48,000</div>
+          Happy Users
+        </div>
+
+        <div class="col ico">
+          <i class="fas fa-tachometer-alt ico" style="color: white;font-size: 60px;"></i>
+          <div class="num">36,00,000</div>
+          Km travelled
+        </div>
+        <div class="col ico">
+          <i class="fas fa-star ico"style="color: white;font-size: 40px;"></i><i style="color: white;font-size: 40px;"class="fas fa-star"></i><i style="color: white;font-size: 40px;" class="fas fa-star"></i><i style="color: white;font-size: 40px;"class="fas fa-star"></i><i class="fas fa-star-half-alt"style="color: white;font-size: 40px;"></i>
+          <div class="num">4.6</div>
+          Rating 4.6/5
+        </div>
+      </div>
+    </div>
+  </div>
+   <script>
+    gsap.from(".ico", {
+  scrollTrigger:{
+    trigger:".r3",
+     start:"100px center",
+     
+    
+     
+  },
+  y:"-200px",
+  delay:3,
+   opacity:0,
+   duration:1.5,
+   stagger:0.8,
+   ease: "power3.out"
+
+});
+  </script>
+  <!-- number increasing End -->
+  <script type="text/javascript">
+    $(".num").counterUp({delay:10,time:11000});
+  </script>
+  <br><br>
+<!-- Car carousel-->
+<div style="text-align: center;">
+	<h1 class="ml15">
+  <span class="word " style="font-family: 'Alatsi', sans-serif;">Ride</span>
+  <span class="word"style="font-family: 'Alatsi', sans-serif;">With</span>
+  <span class="word"style="font-family: 'Alatsi', sans-serif;">Pride</span>
+</h1>
+<script>
+	anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 2000
+  });
+  
+</script>
+</div>
+<br>
+  <div class="container 12">
+   
+<div id="carouselExampleControls" class="carousel slide 12" data-ride="carousel"  data-interval="2000" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="height:500px;" class="d-block w-100" src="https://www.motorbeam.com/wp-content/uploads/Maruti-Wagon-R-Review.jpg" alt="First slide">
+      <div class="carousel-caption ">
+            <h2 style="font-size:40px;color:#c5cbcb; margin-bottom:0px; margin-left:-650px;">Mini</h2>
+            <h3 style="font-size:19px;margin-bottom:300px;color:#c5cbcb;margin-left:-650px;">Price Starting at ₹ 8/km<br> </h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img style="height:500px;" class="d-block w-100" src="https://imgctcf.aeplcdn.com/thumbs/p-nc-b-ver54/images/car-data/big/hyundai-eon-9573.png" alt="Second slide">
+       <div class="carousel-caption ">
+            <h2 style="font-size:40px;color:#75747a; margin-bottom:0px; margin-left:600px;">MICRO</h2>
+            <h3 style="font-size:20px;margin-bottom:300px;color:#75747a;margin-left:610px;">Price Starting at<br> <span style="margin-left:15px; ">₹10/hr</span> </h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" style="height:500px;"  src="https://imgd.aeplcdn.com/0x0/n/cw/ec/47562/skoda-rapid-tsi-right-front-three-quarter0.jpeg">
+      <div class="carousel-caption ">
+            <h2 style="font-size:40px;color:#5c5855; margin-bottom:0px; margin-left:650px;">SEDAN</h2>
+            <h3 style="font-size:20px;margin-bottom:300px;color:#5c5855;margin-left:680px;">Price Starting at ₹ 12/hr<br>  </h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+      <img class="d-block w-100" style="height:500px;"  src="https://www.drivespark.com/images/2017-05/toyota-innova-crysta-touring-sport-exterior-5.jpg" alt="Third slide">
+       <div class="carousel-caption ">
+            <h2 style="font-size:40px;color:#d2d3d7; margin-bottom:0px; margin-left:580px;">SUV</h2>
+            <h3 style="font-size:20px;margin-bottom:300px;color:#d2d3d7;margin-left:625px;">Price Starting at<br> <span style="margin-left:25px; "> ₹ 15/Km </h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" style="height:500px;"  src="https://imgd.aeplcdn.com/1056x594/n/0f7l3ra_1429635.jpg?q=8" alt="Third slide">
+       <div class="carousel-caption ">
+            <h2 style="font-size:40px;color:#9a9899; margin-bottom:0px; margin-left:580px;">PRIME</h2>
+            <h3 style="font-size:20px;margin-bottom:300px;color:#9a9899;margin-left:630px;">Price Starting at ₹18/Km </h3>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" style="height:500px;"  src="https://imgd.aeplcdn.com/0x0/cw/ec/22613/Audi-A4-Right-Front-Three-Quarter-90600.jpg?v=201711021421" alt="Third slide">
+       <div class="carousel-caption ">
+            <h2 style="font-size:40px;color:#373a4b; margin-bottom:0px; margin-left:600px;">LUXURY</h2>
+            <h3 style="font-size:20px;margin-bottom:300px;color:#373a4b;margin-left:630px;">Price Starting at ₹ 20/Km </h3>
+        </div>
+    </div>
+    
+    
+     
+  </div>
+  
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ 
+  </div>
+  <script>
+  	 gsap.from(".12", {
+  scrollTrigger:{
+    trigger:".12",
+     start:"top center",
+     markers:true
+     
+    
+     
+  },
+  y:"-100px",
+   opacity:0,
+   duration:1.5,
+   ease: "power3.out"
+
+});
+  </script>
+
+  
+<!-- Car carousel End-->
+<br><br>
+ <h1 class="ml9 ig" style="text-align: center;">
+  <span class="text-wrapper">
+    <span class="letters" >INSTAGRAM</span>
+  </span>
+</h1>
+    <script>
+      var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 2500
+  });
+  gsap.from(".ig", {
+  scrollTrigger:{
+    trigger:".ig",
+     start:"top center",
+   
+     
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:1,
+   ease: "circ.out"
+});
+    </script>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/1-bmw-7-series-730ld-2019-uk-fd-hero-front.jpg?itok=3hIdcBPu)"></div>
+      <div class="swiper-slide" style="background-image:url(https://d3lp4xedbqa8a5.cloudfront.net/s3/digital-cougar-assets/whichcar/2019/08/05/6235/mercedes-benz-cls450-front-qtrr.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://img.autobytel.com/car-reviews/autobytel/11682-the-most-comfortable-family-sedans-for-2020/2020-Honda-Accord-900x600.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://cdni.autocarindia.com/ExtraImages/20190129071332_2019-Wagon-R-with-accessori.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://img.etimg.com/thumb/width-640,height-480,imgsize-55292,resizemode-1,msid-61078735/wealth/spend/best-5-suvs-to-buy-this-diwali/st3-thumb.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Dzire-2020/7664/1584705998420/front-left-side-47.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/top_10_compact_suvs_-_range_rover_evoque.jpg?itok=fvbp3IIs)"></div>
+      <div class="swiper-slide" style="background-image:url(https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Hyundai-Xcent/5789/1559026746847/front-left-side-47.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/story/hero_image/2021-Hyundai-i30-sedan-red-1001x565-1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(https://cnet3.cbsistatic.com/img/z-wgv2GXIy4QY7jDiZBDTfm_bes=/1240x775/2020/08/13/5a04d974-bd24-49e0-91c6-4502bdfb5dea/rolls-royce-wraith-2020-09314.jpg)"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!--Instagram End-->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+  <!--Instagram Script End-->
+<br>
+<!--Footer-->
+<footer
+      class="page-footer font-small unique-color-dark brown1"
+      style="background-color: black"
+    >
+      <div style="background-color: #8d703b" class="brown">
+        <div class="container">
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+            <!-- Grid column -->
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 get"
+            >
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4 icon"> </i>
+                
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter white-text mr-4 icon"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g white-text mr-4 icon"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in white-text mr-4 icon"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram white-text icon"> </i>
+              </a>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </div>
+           <script>
+        gsap.from(".brown", {
+  scrollTrigger:{
+    trigger:".brown",
+     start:"-35px center",
+     end:"+=150",
+     
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:1.3,
+   ease:"cric.out"
+});
+         gsap.from(".get", {
+  scrollTrigger:{
+    trigger:".get",
+     start:"-25px center",
+     end:"+=150",
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"-100vw",
+   opacity:0,
+   dealay:1.3,
+   duration:1.5,
+   ease:"bounce.out"
+});
+
+gsap.from(".icon", {
+  scrollTrigger:{
+    trigger:".icon",
+     start:"-100px center",
+     end:"+=150",
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"100vw",
+   opacity:0,
+   rotate:360,
+   stagger:0.3,
+   duration:1.8
+   
+});
+</script>
+      </div>
+      <br><br>
+
+      <!-- Footer Links -->
+      <div class="container-fluid ">
+        <div
+          class="container text-center text-md-left mt-5"
+          style="color: white"
+        >
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase font-weight-bold ft">FASCINANT HOTEL</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto ft"
+                style="width: 60px"
+              />
+              <p class="ft">
+                fascinant's hotel search allows users to compare hotel prices in
+                just a few clicks from more than 400 booking sites for 1.8
+                million+ hotels in over 190 countries. With 1.4 billion visits
+                annually to our site, travellers regularly use the hotel
+                comparison to compare deals in the same city. Get information
+                for weekend trips to cities like Mumbai or Bengaluru and you can
+                find the right hotel on trivago quickly and easily. numerous
+                hotels available..
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold ft">Products</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+              />
+              <p class="ft">
+                <a href="Index.html">Hotels</a>
+              </p>
+              <p class="ft">
+                <a href="Car rental.html">Car Rental</a>
+              </p>
+              <p class="ft">
+                <a href="Rooms.html">Rooms</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold ft">Useful links</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+              />
+              <p class="ft">
+                <a href="#!">Your Account</a>
+              </p>
+              <p class="ft">
+                <a href="#!">Become an Affiliate</a>
+              </p>
+              <p class="ft">
+                <a href="#!">Shipping Rates</a>
+              </p>
+              <p class="ft">
+                <a href="About us.html">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold ft">Contact</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+              />
+              <p class="ft">
+                <i class="fas fa-home mr-3"></i
+                ><span style="font-family: 'Marcellus SC', serif"
+                  >Noida Sec62,India</span
+                >
+              </p>
+              <p class="ft">
+                <i class="fas fa-envelope mr-3"></i
+                ><span style="font-family: 'Marcellus SC', serif"
+                  >Email: mail@mail.com</span
+                >
+              </p>
+              <p class="ft">
+                <i class="fas fa-phone mr-3"></i
+                ><span style="font-family: 'Marcellus SC', serif"
+                  >Phone: 9675303719</span
+                >
+              </p >
+              <p class="ft">
+                <i class="fas fa-print mr-3"></i>
+                <span style="font-family: 'Marcellus SC', serif"
+                  >+ 01 234 567 89</span
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <script>
+        gsap.from(".brown1", {
+  scrollTrigger:{
+    trigger:".brown1",
+     start:"top center",
+     end:"+=150",
+     
+     
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"-100vw",
+   opacity:0,
+   dealay:0.5,
+   duration:1.3,
+   ease:"expo.out"
+});
+
+ gsap.from(".ft", {
+  scrollTrigger:{
+    trigger:".ft",
+     start:"-190px center",
+     end:"+=150",
+     
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  y:"100px",
+   opacity:0,
+   duration:1.5,
+   stagger:0.2
+   
+});
+
+      </script>
+      <div
+        class="footer-copyright text-center py-3 ft1"
+        style="background-color: ; color: white"
+      >
+        Copyright © 2020 FASCINANT HOTEL Inc. All rights reserved.
+      </div>
+      <script>
+        gsap.from(".ft1", {
+  scrollTrigger:{
+    trigger:".ft1",
+     start:"-400px center",
+     end:"+=150",
+     
+     
+
+    
+
+     // start the animation when ".box" enters the viewport (once)
+  },
+  x:"-100vw",
+   opacity:0,
+   delay:4,
+   ease:"expo.out",
+   duration:1.5
+   
+   
+});
+      </script>
+      <!-- Copyright -->
+    </footer>
+    <!--footer End-->
+</body>
+</html>

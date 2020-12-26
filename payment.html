@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PAYMENT</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<style type="text/css" media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background:#82CAFF;
+  margin: 0 10px;
+}
+    .inlineimage {
+    
+    margin-right: 8px;
+    margin-left: 10px
+}
+
+.images {
+    display: inline-block;
+    max-width: 98%;
+    height: auto;
+    width: 20%;
+    margin: 1%;
+    left: 20px;
+    text-align: center
+}
+
+.payment{
+  background: #f8f8f8;
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+  color: #0d3c61;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  background: #2196F3;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196F3;
+  border-radius: 50%;
+}
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
+<div class="wrapper" style="margin-top: -20px;">
+  <div class="payment">
+    <h2>Payment Gateway</h2>
+    <div class="inlineimage" style="margin-bottom: 50px;"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Mastercard-Curved.png"> <img class="img-responsive images" src="data:image/png;base64,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"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Paypal-Curved.png"> <img class="img-responsive images" src="https://cdn.iconscout.com/icon/free/png-512/payment-visa-card-pay-checkout-transaction-bank-51303.png"> </div>
+    
+    <div class="form">
+      <div class="card space icon-relative border-0">
+        <label class="label" style="background-color:#f8f8f8; margin-bottom:0px;">Card holder:</label>
+        <input type="text" class="input" placeholder="Name on Card">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative border-0">
+        <div><label class="label"for="iban" style="background-color:#f8f8f8; margin-bottom:0px;">Card number:</label></div>
+        <input id="iban"  type="text" class="input" maxlength="19" placeholder="Card Number" >
+        <script >
+    function space(str, after) {
+    if (!str) {
+        return false;
+    }
+    after = after || 4;
+    var v = str.replace(/[^\dA-Z]/g, ''),
+        reg = new RegExp(".{" + after + "}", "g");
+    return v.replace(reg, function (a) {
+        return a + ' ';
+    });
+}
+
+var el = document.getElementById('iban');
+el.addEventListener('keyup', function () {
+    this.value = space(this.value, 4);
+});
+        </script>
+        <i class="far fa-credit-card"></i>
+        
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data"maxlength="5" class="input"  placeholder="MM / YY">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVV:</label>
+          <input type="password" maxlength="3" class="input" data-mask="000" placeholder="CVV">
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        
+      <div >
+        <button class="btn btn-block" style="color:white;"onclick="window.location.href='paymentdone.html';">Pay</button>
+        <script></script>
+      </div> 
+      
+    </div>
+  </div>
+</div>
+    
+<script>
+    $("input[name='expiry-data']").mask("00 / 00");
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+.swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 400px;
+
+    }
+.middle{
+  position: absolute;
+  top: 68%;
+  width: 100%;
+  
+}
+.counting-sec{
+  padding: 40px 0;
+  width: 100%;
+  background: linear;
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col{
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+   margin-top: 1020px;
+}
+.col i{
+  font-size: 40px;
+  color: #333;
+}
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+}
+.animate__animated.animate__slideInDown {
+   --animate-delay: .2s;
+   --animate-duration: 0.2s;
+}
+
+.black-overlay{
+    position:absolute;
+    top:1333px;
+    left: 0px;
+    height: 550px;
+    width: 100%;
+    background:rgba(4, 16, 12, 0.39);
+  }
+  .home{
+  margin-left: 150px;
+
+}
+.navother{
+  margin-left: 50px;
+ 
+
+}
+.navother:hover{
+  border-bottom: 2px solid white;
+
+}
+.bg{
+  margin-top:-112px;
+}
+.ml9 {
+  position: relative;
+  font-weight: 350;
+  font-size: 4em;
+
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+   text-decoration: underline;
+   text-decoration-color:#8d703b;
+   padding-bottom: 5px;
+
+ 
+}
+  
+
+
+.ml7 {
+  position: relative;
+  font-weight: 900;
+
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  
+}
+	

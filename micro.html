@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FASCINANT MICRO</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
+<style>
+.ml1 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color:black;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 120; }
+.ml1 .line2 { bottom: 0; }
+</style>
+</head>
+
+<body>
+<div style="margin-top:20px;text-align: center;" class="animate__animated animate__lightSpeedInLeft animate__slow">
+	<h1 class="ml1" >
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">FASCINANT MICRO</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+</div>
+	
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+	var textWrapper = document.querySelector('.ml1 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml1 .letter',
+    scale: [0.3,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  }).add({
+    targets: '.ml1 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 1700,
+    offset: '-=875',
+    delay: (el, i, l) => 80 * (l - i)
+  }).add({
+    targets: '.ml1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 3000
+  });
+</script>
+<!--carousel-->
+<div class="container animate__backInDown animate__animated animate__delay-2s animate__fast" >
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100"style="height: 500px;" src="https://imgctcf.aeplcdn.com/thumbs/p-nc-b-ver54/images/car-data/big/hyundai-eon-9573.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100"style="height: 500px;" src="https://www.indiacarnews.com/wp-content/uploads/2016/04/2016-Hyundai-Eon-4.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100"style="height: 500px;" src="https://cdn1.acedms.com/photos/listing/2017-06-12/fc65e1e7473b0cd10e66d58990535784_extra_large.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>	
+</div>
+
+<!--carousel End-->
+
+
+	<!-- Advantage-->
+<div class="container-fluid" >
+    <div class="container"style="height: 500px;">
+        <div style="text-align: center;font-family: 'Acme', sans-serif;" class="a">
+            <h2><b>THE CAR RENTAL ADVANTAGE</b></h2>
+        </div>
+        <div style="text-align: center; font-family: 'Architects Daughter', cursive;"class="b">
+            <h4><b>We simplified car rentals, so you can focus on what's important to you.</b></h4>
+        </div>
+        <br>
+            <div class=" row">
+                <div class="col-md-4 x">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/color/53/000000/paid-search.png" style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;" style="text-align: center;">No Hidden Charges</h4>
+                            <h5 style="text-align: center;font-size: 17px;padding: 5px;">Our prices include taxes and insurance. <br>What you see is what you really pay!</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 y">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/officel/40/000000/worldwide-location.png"style= "font-size:50px;color: #2C7559"></i></div>
+                             <h4 style="text-align: center;">Travel tension free</h4>
+                            <h5 style="font-size: 17px;text-align:center;padding: 5px;">Our cars have all the papers.  Just remember to bring your driving licence.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 z">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/color/57/000000/road.png"style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;" style="text-align: center;">24x7 Roadside Assistance</h4>
+                            <h5 style="font-size: 17px;text-align: center;padding: 5px;">We have round-the-clock, pan India partners. Help is never far away from you.</h5>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                  <script>
+       gsap.from(".a", {
+  scrollTrigger:{
+    trigger:".a",
+     start:"top center",
+  
+  },
+  y:"-100px",
+   opacity:0,
+   duration:1.5,
+   ease: "power3.out"
+});
+       gsap.from(".b", {
+  scrollTrigger:{
+    trigger:".b",
+     start:"top center",
+    
+
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:1.5,
+  
+   ease: "power3.out"
+});
+
+ gsap.from(".x", {
+  scrollTrigger:{
+    trigger:".x",
+     start:"top center",
+     
+  
+  },
+  x:"-100vw",
+   opacity:0,
+   duration:1.5,
+   ease: "power3.out"
+});
+  gsap.from(".y", {
+  scrollTrigger:{
+    trigger:".y",
+     start:"100px center",
+     
+  
+  },
+  y:"-100px",
+   opacity:0,
+   delay:1.5,
+   duration:1.5,
+   ease: "power3.out"
+});
+ gsap.from(".z", {
+  scrollTrigger:{
+    trigger:".z",
+     start:"top center",
+     
+  
+  },
+  x:"100vw",
+   opacity:0,
+   delay:0.5,
+   duration:1.5,
+   ease: "power3.out"
+});
+
+    </script>
+<br>
+            <div class=" row">
+                <div class="col-md-4 x1">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/fluent/60/000000/vehicle-security.png" style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;">Damage Insurance</h4>
+                            <h5 style="font-size: 17px;text-align: center;padding: 5px;">All your bookings include damage insurance! Drive safe, but don’t worry!</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 y1">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/emoji/58/000000/fuel-pump.png"style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;">Time Cost Included</h4>
+                            <h5 style="font-size: 17px;text-align: center;padding: 5px;">Don't worry about time! All time  costs are included . Fuel on your own</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 z1">
+                    <div class="card" style="height: 160px; background-color:#b4842d;">
+                        <div>
+                            <div style="text-align: center;"><img src="https://img.icons8.com/cute-clipart/54/000000/price-tag-usd.png"style= "font-size:50px;color: #2C7559"></i></div>
+                            <h4 style="text-align: center;">Flexi Pricing Packages</h4>
+                            <h5 style="font-size: 17px;text-align: center;padding: 5px;">One size never fits all! Choose a balance of time and kilometers that works best for you.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        gsap.from(".x1", {
+  scrollTrigger:{
+    trigger:".x",
+     start:"top center",
+     
+  
+  },
+  x:"-100vw",
+   opacity:0,
+   delay:2,
+   duration:1.5,
+   ease: "power3.out"
+});
+  gsap.from(".y1", {
+  scrollTrigger:{
+    trigger:".y",
+     start:"100px center",
+     
+  
+  },
+  y:"-100px",
+   opacity:0,
+   delay:3.5,
+   duration:1.5,
+  
+   ease: "power3.out"
+});
+ gsap.from(".z1", {
+  scrollTrigger:{
+    trigger:".z",
+     start:"top center",
+     
+  
+  },
+  x:"100vw",
+   opacity:0,
+   delay:2.5,
+   duration:1.5,
+   ease: "power3.out"
+});
+    </script>
+  	<!-- Advantage End-->
+  	<br><br>
+  	<div style=" margin: auto;"><button class="btn btn-block col-md-3 zac" style="background-color:black;margin: auto;color: white;"onclick="window.location.href='trialcar.php';">Confirm Booking</button></div>
+     <script>
+       gsap.from(".zac", {
+  scrollTrigger:{
+    trigger:".z",
+     start:"top center",
+     
+  
+  },
+  y:"-100px",
+   opacity:0,
+   delay:4.5,
+   duration:1.5,
+   ease: "power3.out"
+});
+    </script>
+<br><br>
+</body>
+</html>
